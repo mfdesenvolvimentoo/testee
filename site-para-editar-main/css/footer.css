@@ -1,0 +1,135 @@
+/* Estiliza o rodapé */
+.footer {
+  background: var(--corcabeçalho); /* Define a cor de fundo */
+  padding: 50px 0px; /* Adiciona espaçamento interno */
+}
+
+.imglogofooter {
+max-width: 100px;
+height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estiliza o menu no rodapé */
+.menu-footer {
+  display: flex; /* Exibe os itens em linha */
+  margin-right: 20px; /* Adiciona margem à direita */
+}
+
+/* Adiciona margem à esquerda do segundo grupo de itens do menu */
+.menu-footer ul + ul {
+  margin-left: 50px;
+}
+
+/* Adiciona margem superior aos itens subsequentes do menu */
+.menu-footer ul li + li {
+  margin-top: 20px;
+}
+
+/* Estiliza os dados no rodapé */
+.data-footer {
+  margin-right: 20px; /* Adiciona margem à direita */
+}
+
+/* Estiliza os links dentro dos dados do rodapé */
+.data-footer > a {
+  display: flex; /* Exibe os itens em linha */
+  align-items: center; /* Alinha os itens ao centro */
+  color: var(--base); /* Define a cor do texto */
+  text-decoration: none; /* Remove sublinhado */
+  height: 48px; /* Define a altura */
+}
+
+/* Estiliza os ícones sociais no rodapé */
+.social-footer {
+  display: flex; /* Exibe os itens em linha */
+}
+
+/* Estiliza os links sociais no rodapé */
+.social-footer a {
+  width: 48px; /* Define a largura */
+  height: 48px; /* Define a altura */
+  display: flex; /* Exibe os itens em linha */
+  align-items: center; /* Alinha os itens ao centro */
+  margin-bottom: -10px; /* Adiciona margem inferior negativa */
+}
+
+/* Estiliza o contêiner principal do rodapé */
+.footer .container {
+  justify-content: space-between; /* Distribui os itens igualmente */
+  align-items: center; /* Alinha os itens ao centro */
+}
+
+/* Estiliza os textos dentro das informações locais no rodapé */
+.locals-footer p {
+  color: var(--secundary); /* Define a cor do texto */
+  font-size: 0.9em; /* Define o tamanho da fonte */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Remove a margem inferior do último parágrafo */
+.locals-footer p:last-child {
+  margin-bottom: 0px;
+}
+
+/* Estiliza os spans dentro das informações locais no rodapé */
+.locals-footer p span {
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  font-weight: 700; /* Define o texto como negrito */
+  color: var(--secundary); /* Define a cor do texto */
+  font-size: 1.125em !important; /* Define o tamanho da fonte */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 1100px) {
+  .menu-footer ul + ul {
+    margin-left: 20px; /* Reduz a margem à esquerda */
+  }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 700px) {
+  .footer .container {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+  }
+
+  .menu-footer ul + ul {
+    margin-left: 60px;
+  }
+
+  .data-footer {
+    margin-right: 0px; /* Remove a margem à direita */
+    margin-bottom: 40px; /* Adiciona margem inferior */
+  }
+
+  .menu-footer {
+    margin-right: 0px; /* Remove a margem à direita */
+    margin-bottom: 40px; /* Adiciona margem inferior */
+  }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 450px) {
+  .footer .container {
+    align-items: flex-start; /* Alinha os itens ao início */
+  }
+  .menu-footer {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+  }
+  .menu-footer ul + ul {
+    margin-left: 0px; /* Remove a margem à esquerda */
+    margin-top: 20px; /* Adiciona margem superior */
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 350px) {
+  .data-footer {
+    margin-right: 20px;
+    width: 100%;
+  }
+
+  .data-footer > a {
+    width: 100%;
+    word-wrap: break-word; /* Permite quebra de linha nas palavras longas */
+  }
+}

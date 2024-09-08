@@ -1,0 +1,23 @@
+/* Estiliza o banner promocional */
+.banner {
+  margin-top: 163px; /* Adiciona margem superior */
+  margin-left: 325.5px;  
+ 
+}
+
+/* Estiliza a seção 'pcx' */
+.pcx {
+  margin-top: 163px; /* Adiciona margem superior */
+  padding-top: 145px; /* Adiciona espaçamento interno superior */
+  margin-bottom: 145px; /* Adiciona margem inferior */
+}
+
+/* Altera a direção dos itens dentro do contêiner 'pcx' */
+.pcx .container {
+  flex-direction: column;
+}
+
+/* Estiliza o título dentro do contêiner 'pcx' */
+.pcx .container .title {
+  max-width: 100%; /* Define a largura máxima como 100% */
+}

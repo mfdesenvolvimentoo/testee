@@ -1,0 +1,8 @@
+/* Estiliza o parágrafo dentro da seção de copyright */
+.copy p {
+  background: var(--secundary); /* Define a cor de fundo */
+  color: var(--primary); /* Define a cor do texto */
+  font-size: 0.75em; /* Define o tamanho da fonte */
+  text-align: center; /* Centraliza o texto */
+  padding: 10px 20px; /* Adiciona espaçamento interno */
+}

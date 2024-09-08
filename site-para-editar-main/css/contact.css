@@ -1,0 +1,182 @@
+/* Estiliza a seção de contato */
+.contact {
+  margin-top: 163px; /* Define a margem superior */
+  padding-top: 145px; /* Define o espaçamento interno superior */
+  padding-bottom: 145px; /* Define o espaçamento interno inferior */
+}
+
+/* Estiliza o contêiner na seção de contato */
+.contact .container {
+  flex-direction: column; /* Define a direção dos itens como coluna */
+}
+
+/* Estiliza o título na seção de contato */
+.contact .title {
+  max-width: 100%; /* Define a largura máxima como 100% */
+  text-align: center; /* Centraliza o título */
+}
+
+/* Estiliza o texto dentro do contêiner na seção de contato */
+.contact .container > .text {
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Define margens para o conteúdo de contato */
+.contact-content {
+  margin-top: 100px; /* Adiciona margem superior */
+}
+
+/* Estiliza o contêiner do conteúdo de contato */
+.contact-content .container {
+  justify-content: space-between; /* Distribui os itens igualmente */
+}
+
+/* Estiliza mensagens de erro e sucesso */
+.error, .success {
+  width: 60%; /* Define a largura como 60% */
+  margin-right: 100px; /* Adiciona margem à direita */
+  background: var(--primary); /* Define a cor de fundo */
+  padding: 60px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza os títulos das mensagens de erro e sucesso */
+.error h3, .success h3 {
+  color: var(--base); /* Define a cor do texto */
+  font-weight: 700; /* Define o texto como negrito */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+}
+
+/* Estiliza os parágrafos das mensagens de erro e sucesso */
+.error p, .success p {
+  color: var(--base); /* Define a cor do texto */
+  margin-top: 40px; /* Adiciona margem superior */
+}
+
+/* Define a ordem do elemento de erro */
+.error {
+  order: 1;
+}
+
+/* Define a ordem do elemento 'contact-more' */
+.contact-more {
+  order: 2;
+}
+
+/* Estiliza o formulário na seção de contato */
+.form {
+  display: flex; /* Define a exibição como flexível */
+  flex-direction: column; /* Define a direção dos itens como coluna */
+  width: 60%; /* Define a largura como 60% */
+  margin-right: 100px; /* Adiciona margem à direita */
+  background: var(--primary); /* Define a cor de fundo */
+  padding: 60px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza os campos de entrada e área de texto no formulário */
+.form input,
+.form textarea {
+  margin-bottom: 20px; /* Adiciona margem inferior */
+  outline: none; /* Remove o contorno ao foco */
+  border: none; /* Remove a borda */
+  background: var(--base); /* Define a cor de fundo */
+  padding: 20px; /* Adiciona espaçamento interno */
+  border-radius: 10px; /* Arredonda os cantos */
+  color: var(--primary); /* Define a cor do texto */
+  font-size: 16px; /* Define o tamanho da fonte */
+}
+
+/* Estiliza o texto de placeholder nos campos de formulário */
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--primary); /* Define a cor do placeholder */
+  font-family: var(--font); /* Define a fonte */
+  font-weight: 700; /* Define o texto como negrito */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  font-size: 16px !important; /* Define o tamanho da fonte */
+}
+
+/* Estiliza os campos de entrada ao passar o mouse */
+.form input:hover {
+  background: rgba(255, 255, 255, 0.8); /* Altera a cor de fundo */
+}
+
+/* Remove a margem superior do último campo de entrada */
+.form input:last-child {
+  margin-top: 0px;
+}
+
+/* Estiliza o botão dentro do formulário */
+.form .btn {
+  max-width: 100%; /* Define a largura máxima como 100% */
+  padding: 20px 0px; /* Adiciona espaçamento interno vertical */
+}
+
+/* Estiliza a área de texto no formulário */
+.form textarea {
+  height: 200px; /* Define a altura */
+  resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+/* Altera a direção dos itens no contêiner de conteúdo de contato */
+.contact-content .container {
+  flex-direction: row;
+}
+
+/* Adiciona margem superior ao gap de contato */
+.contact-gap {
+  margin-top: 40px;
+}
+
+/* Define a largura do elemento 'contact-more' */
+.contact-more {
+  width: 40%;
+}
+
+/* Alinha o título dentro de 'contact-more' */
+.contact-more .title {
+  text-align: start;
+}
+
+/* Remove a margem superior da seção de rodapé social */
+.contact-more .social-footer {
+  margin-top: 0px;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 1100px) {
+  .form, .error, .success {
+    margin-right: 40px; /* Reduz a margem à direita */
+  }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 805px) {
+  .contact-content .container {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+  }
+  .form, .error, .success {
+    width: 100%; /* Define a largura como 100% */
+    margin-right: 0px; /* Remove a margem à direita */
+    padding: 40px; /* Reduz o espaçamento interno */
+  }
+
+  .contact-more {
+    width: 100%; /* Define a largura como 100% */
+    margin-top: 60px; /* Adiciona margem superior */
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 400px) {
+  .form, .error, .success {
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  .contact-content .link-post {
+    word-wrap: break-word; /* Permite quebra de linha nas palavras longas */
+  }
+
+  .form .btn {
+    word-wrap: break-word; /* Permite quebra de linha nas palavras longas */
+  }
+}

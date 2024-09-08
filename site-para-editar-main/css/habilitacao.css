@@ -1,0 +1,271 @@
+/* Define margens para contêineres e seções relacionadas à habilitação */
+.habilitacao-content .container,
+.cnh {
+  margin-bottom: 145px;
+}
+
+/* Remove a margem inferior do último contêiner */
+.habilitacao-content .container:last-child {
+  margin-bottom: 0px !important;
+}
+
+/* Define a direção e o alinhamento para o segundo contêiner */
+.habilitacao-content .container:nth-child(2) {
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+/* Define margens para a seção de habilitação */
+.habilitacao-content {
+  margin: 163px 0px 0px 0px;
+  padding-top: 145px;
+}
+
+/* Estiliza o texto na seção de habilitação */
+.habilitacao-text {
+  width: 50%;
+  margin-right: 100px;
+}
+
+/* Centraliza o texto e altera o alinhamento no segundo contêiner */
+.habilitacao-content .container:nth-child(2) .habilitacao-text {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Define o tamanho máximo do texto no segundo contêiner */
+.habilitacao-content .container:nth-child(2) .habilitacao-text .text {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* Estiliza o título na seção de habilitação */
+.habilitacao-text .title {
+  max-width: 100%;
+}
+
+/* Estiliza o título da FAQ */
+.faq-title {
+  max-width: 200px !important;
+  word-wrap: normal !important;
+}
+
+/* Estiliza as imagens na seção de habilitação */
+.habilitacao-img {
+  width: 50%;
+}
+
+/* Estiliza os passos na seção de habilitação */
+.step {
+  background: var(--primary);
+  margin-top: 60px !important;
+  width: 60%;
+  margin: 0 auto;
+  color: var(--base);
+  padding: 60px;
+  border-radius: 40px;
+  display: flex;
+  position: relative;
+}
+
+/* Estiliza o box dentro dos passos */
+.step .box {
+  background: var(--secundary);
+  position: absolute;
+  display: block;
+  height: 100%;
+  top: 0px;
+  left: -3px;
+  width: 30%;
+  border-radius: 40px 0px 0px 40px;
+  box-shadow: 0px 8px 20px #ffffff;
+}
+
+/* Estiliza o texto dentro do box */
+.box span {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 700;
+  color: var(--secundaryBold);
+}
+
+/* Estiliza o conteúdo dentro dos passos */
+.step-content {
+  margin-left: 200px;
+}
+
+/* Estiliza o título dentro dos passos */
+.step-content .title {
+  color: var(--secundary);
+  font-size: 1.5em !important;
+}
+
+/* Estiliza o texto dentro dos passos */
+.step-content .text {
+  color: var(--base);
+}
+
+/* Estiliza a seção FAQ */
+.faq {
+  padding: 145px 0px;
+  background-image: url("../img/bg-faq.png");
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Estiliza o contêiner de texto dentro da FAQ */
+.faq .container .habilitacao-text {
+  width: 50%;
+  margin-right: 100px;
+}
+
+/* Estiliza a lista de perguntas da FAQ */
+.faq-ul {
+  width: 50%;
+}
+
+/* Estiliza os itens da lista de perguntas */
+.faq-ul li {
+  background: var(--primary);
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: var(--base);
+  cursor: pointer;
+}
+
+/* Remove a margem inferior do último item da lista */
+.faq-ul li:last-child {
+  margin-bottom: 0px;
+}
+
+/* Estiliza os parágrafos dentro da FAQ */
+.faq-ul li p {
+  display: none;
+  color: var(--base);
+  margin-top: 20px;
+  animation: down .2s forwards;
+}
+
+/* Exibe blocos */
+.block {
+  display: block !important;
+}
+
+/* Estiliza os spans dentro dos itens da FAQ */
+.faq-ul li span {
+  font-weight: 500;
+  color: var(--secundary);
+}
+
+/* Estiliza as perguntas dentro da FAQ */
+.pergunta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Estiliza as setas dentro da FAQ */
+.arrow {
+  font-size: 0.5em;
+  color: var(--secundary);
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 880px) {
+  .cnh .container {
+    flex-direction: column;
+  }
+
+  .habilitacao-text {
+    width: 100%;
+    margin-right: 0px;
+    margin-bottom: 40px;
+  }
+
+  .cnh .habilitacao-img {
+    width: 100%;
+  }
+
+  .step {
+    width: 100%;
+  }
+
+  .faq .container {
+    flex-direction: column;
+  }
+
+  .faq .container .habilitacao-text {
+    width: 100%;
+    margin-right: 0px;
+  }
+
+  .faq-title {
+    max-width: 100% !important;
+  }
+
+  .faq-ul {
+    width: 100%;
+  }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 570px) {
+  .step-content {
+    margin-left: 100px;
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 500px) {
+    .step-content .title {
+        max-width: 100%;
+        word-break: break-all;
+    }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 400px) {
+  .step-content {
+    margin-left: 40px;
+  }
+
+  .faq-title {
+    word-wrap: break-word !important;
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 340px) {
+  .box span {
+    font-size: 2em;
+  }
+
+  .step {
+    padding: 40px;
+  }
+}
+
+/* Estilos responsivos para telas extremamente pequenas */
+@media (max-width: 305px) {
+  .step-content {
+    margin-left: 20px;
+  }
+
+  .step-content .text {
+    width: 100%;
+    word-break: break-all;
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 280px) {
+  .step-content {
+    margin-left: 0px;
+  }
+}

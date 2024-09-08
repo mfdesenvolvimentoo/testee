@@ -1,0 +1,39 @@
+/* Estiliza o container dentro da seção 'Benefícios' */
+.benefits .container {
+  justify-content: space-between; /* Distribui os itens igualmente dentro do container */
+}
+
+/* Estiliza a seção 'Benefícios' */
+.benefits {
+  margin: 100px 0px 145px 0px; /* Adiciona margem superior e inferior */
+}
+
+/* Adiciona margem à esquerda dos itens de lista subsequentes */
+.benefits li + li {
+  margin-left: 40px;
+}
+
+/* Estiliza os títulos dentro da lista de benefícios */
+.benefits .container li h3 {
+  text-align: center; /* Centraliza o texto */
+  font-size: 1.2em; /* Define o tamanho da fonte */
+  font-weight: 700; /* Define a fonte como negrito */
+  color: var(--primary); /* Define a cor do texto usando a variável 'primary' */
+}
+
+/* Centraliza as imagens dentro da lista de benefícios */
+.benefits .container li img {
+  margin: 0 auto;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 590px) {
+  .benefits .container {
+    flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+  }
+
+  .benefits li + li {
+    margin-left: 0px; /* Remove a margem à esquerda em telas menores */
+    margin-top: 40px; /* Adiciona margem superior entre os itens de lista */
+  }
+}

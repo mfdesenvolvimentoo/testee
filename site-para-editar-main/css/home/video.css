@@ -1,0 +1,67 @@
+/* Estiliza a seção de vídeo na home */
+.video-home {
+  margin-bottom: 145px; /* Adiciona margem inferior */
+}
+
+/* Estiliza o contêiner de mídia de vídeo */
+.video-midia {
+  width: 60%; /* Define a largura como 60% */
+}
+
+/* Define a largura do vídeo como 100% do contêiner */
+.video-midia video {
+  width: 100%;
+}
+
+/* Estiliza o texto na seção de vídeo */
+.video-text {
+  width: 40%; /* Define a largura como 40% */
+  margin-left: 100px; /* Adiciona margem à esquerda */
+}
+
+/* Estiliza o título dentro da seção de vídeo */
+.video-text .title {
+  max-width: 100%; /* Garante que o título não exceda a largura máxima */
+}
+
+/* Estiliza o texto dentro da seção de vídeo */
+.video-text .text {
+  margin-bottom: 20px !important; /* Adiciona margem inferior */
+}
+
+/* Estiliza o botão dentro da seção de vídeo */
+.video-text .botao-a .botao {
+  max-width: 200px !important; /* Define a largura máxima do botão */
+  border: 4px solid var(--secundary);
+  background: var(--primary);
+  color: var(--secundary);
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 920px) {
+  .video-home {
+    flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+  }
+
+  .video-text {
+    width: 100%; /* Define a largura como 100% em telas menores */
+    margin-top: 40px; /* Adiciona margem superior */
+    margin-left: 0px; /* Remove a margem à esquerda */
+  }
+
+  .video-text .title {
+    max-width: 100%; /* Garante que o título não exceda a largura máxima */
+  }
+
+  .video-midia {
+    width: 100%; /* Define a largura como 100% em telas menores */
+  }
+}

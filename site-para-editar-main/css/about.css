@@ -1,0 +1,57 @@
+/* Estiliza o contêiner na seção 'Sobre' */
+.about .container {
+  align-items: center; /* Alinha os itens ao centro */
+  margin-bottom: 145px; /* Adiciona margem inferior */
+}
+
+/* Remove a margem inferior do último contêiner */
+.about .container:last-child {
+  margin-bottom: 0px;
+}
+
+/* Estiliza a seção 'Sobre' */
+.about {
+  margin-top: 163px; /* Define a margem superior */
+  margin-bottom: 145px; /* Define a margem inferior */
+  padding-top: 145px; /* Define o espaçamento interno superior */
+}
+
+/* Estiliza o texto na seção 'Sobre' */
+.about-txt {
+  width: 50%; /* Define a largura como 50% */
+  margin-right: 100px; /* Adiciona margem à direita */
+}
+
+/* Estiliza o segundo item de texto na seção 'Sobre' */
+.about-txt:nth-child(2) {
+  margin-left: 100px; /* Adiciona margem à esquerda */
+}
+
+/* Estiliza as imagens na seção 'Sobre' */
+.about-img {
+  width: 50%; /* Define a largura como 50% */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 880px) {
+  .about .container {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+  }
+
+  .about-txt {
+    margin-right: 0px; /* Remove a margem à direita */
+    margin-left: 0px !important; /* Remove a margem à esquerda */
+    order: 1; /* Altera a ordem dos elementos */
+  }
+
+  .about-txt {
+    width: 100%; /* Define a largura como 100% */
+  }
+
+  .about-img {
+    width: 100%; /* Define a largura como 100% */
+    margin: 0 auto; /* Centraliza a imagem */
+    margin-top: 40px; /* Adiciona margem superior */
+    order: 2; /* Altera a ordem dos elementos */
+  }
+}

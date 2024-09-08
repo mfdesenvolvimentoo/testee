@@ -1,0 +1,227 @@
+/* Define o modelo de caixa para todos os elementos */
+* {
+  box-sizing: border-box;
+}
+
+/* Define variáveis CSS globais para cores e fontes */
+:root {
+  --primary: #ffffff;
+  --primaryLight: #ABABB4;
+  --secundary: #021720;
+  --secundaryBold: #67c852;
+  --base: #ffffff;
+  --corcabeçalho: #ffb619;
+  --corsuave: #ffb61991;
+  --corbox: #8f0000;
+  --font: "Rubik", sans-serif;
+}
+
+/* Estiliza o corpo da página */
+body {
+  font-family: var(--font); /* Define a fonte padrão do corpo */
+  background-color: #021720; /* Define a cor de fundo */
+}
+
+/* Estiliza imagens para ocupar 100% do contêiner */
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.logo{
+  width: 120px;
+  height: auto;
+}
+
+
+/* Define o contêiner centralizado e com espaçamento */
+.container {
+  display: flex;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+/* Estiliza os títulos */
+.title {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  max-width: 200px;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+/* Estiliza textos */
+.text {
+  color: var(--primary);
+  font-weight: 500;
+  line-height: 1.5em;
+}
+
+/* Estiliza links com a classe 'link-hash' */
+.link-hash {
+  color: #00376b;
+  text-decoration: none;
+}
+
+/* Estiliza links com a classe 'link-post' */
+.link-post {
+  color: var(--secundary);
+  text-decoration: none;
+}
+
+/* Adiciona sublinhado ao passar o mouse sobre 'link-post' */
+.link-post:hover {
+  text-decoration: underline;
+}
+
+/* Estiliza botões */
+.btn {
+  border: 4px solid var(--secundary);
+  background: var(--primary);
+  color: var(--secundary);
+  font-family: var(--font);
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 150px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+/* Define espaçamento para botões */
+.btn-a {
+  margin-right: 20px;
+}
+
+/* Remove margem direita do último botão */
+.btn-a:last-child {
+  margin-right: 0px;
+}
+
+/* Altera cores ao passar o mouse sobre o botão */
+.btn:hover {
+  color: var(--base);
+  border: 4px solid var(--base);
+  transition: 0.3s;
+}
+
+/* Estiliza a seção de chamada para ação (CTA) */
+.cta {
+  background: var(--secundary);
+  color: var(--primary);
+}
+
+/* Estiliza elementos com o atributo 'data-semana' */
+[data-semana]::before {
+  display: inline-block;
+  content: "";
+  width: 6px;
+  height: 6px;
+  background: #e54;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid var(--primary);
+}
+
+/* Altera cor do indicador de status de aberto */
+[data-semana].aberto::before {
+  background: var(--secundary);
+}
+
+/* Remove o indicador se não for o dia da semana */
+[data-semana].not-day::before {
+  display: none;
+}
+
+/* Ativa o menu mobile */
+.active-mobile {
+  display: flex !important;
+}
+
+/* Estiliza elementos com animação */
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+/* Animação de translação à esquerda */
+[data-anime='left'] {
+  transform: translate3d(-20px, 0px, 0px);
+}
+
+/* Animação para quando o elemento é exibido */
+[data-anime='left'].animate {
+  animation: left .5s forwards;
+}
+
+/* Animação para elementos à direita */
+[data-anime='right'].animate {
+  animation: right .5s forwards;
+}
+
+/* Estiliza títulos */
+.h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.3em;
+  background: var(--primary);
+  color: var(--base);
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* Animação de translação para baixo */
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, -30px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* Animação de translação para a esquerda */
+@keyframes left {
+  0% {
+    opacity: 0;
+    transform: translate3d(-30px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* Animação de translação para a direita */
+@keyframes right {
+  0% {
+    opacity: 0;
+    transform: translate3d(30px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 350px) {
+  .btns {
+    flex-direction: column;
+  }
+
+  .btn-a {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+
+  .btn-a:last-child {
+    margin-bottom: 0px;
+  }
+}

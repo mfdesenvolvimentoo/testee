@@ -1,0 +1,37 @@
+/* Estiliza o texto na seção 'Sobre' */
+.about-home-text {
+  margin-right: 100px; /* Adiciona margem à direita do texto */
+  width: 40%; /* Define a largura como 40% */
+}
+
+/* Estiliza a imagem na seção 'Sobre' */
+.about-home-img {
+  width: 60%; /* Define a largura como 60% */
+}
+
+/* Estiliza a seção 'Sobre' */
+.about-home {
+  opacity: 0; /* Define a opacidade inicial como 0 (invisível) */
+  margin-bottom: 145px; /* Adiciona margem inferior */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 920px) {
+  .about-home {
+    flex-direction: column; /* Muda a direção dos itens para coluna em telas menores */
+  }
+
+  .about-home-text {
+    width: 100%; /* Define a largura como 100% em telas menores */
+    margin-bottom: 40px; /* Adiciona margem inferior */
+  }
+
+  .title {
+    max-width: 100%; /* Garante que o título não exceda a largura máxima */
+    word-wrap: break-word; /* Permite que palavras longas sejam quebradas */
+  }
+
+  .about-home-img {
+    width: 100%; /* Define a largura como 100% em telas menores */
+  }
+}

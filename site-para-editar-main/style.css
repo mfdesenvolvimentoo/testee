@@ -1,0 +1,17 @@
+/* Importa os arquivos CSS que contém os estilos resetados, gerais, de header e footer, além dos estilos específicos para cada seção da página */
+@import url("css/reset.css");
+@import url("css/geral.css");
+@import url("css/header.css");
+@import url("css/home/benefits.css");
+@import url("css/home/about.css");
+@import url("css/home/cta.css");
+@import url("css/home/depo.css");
+@import url("css/home/video.css");
+@import url("css/footer.css");
+@import url("css/copy.css");
+@import url("css/about.css");
+@import url("css/habilitacao.css");
+@import url("css/unidades.css");
+@import url("css/promo.css");
+@import url("css/contato.css");
+@import url("css/servicos.css");

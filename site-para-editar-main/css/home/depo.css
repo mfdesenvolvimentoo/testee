@@ -1,0 +1,114 @@
+/* Estiliza a seção de depoimentos */
+.depo {
+  margin-bottom: 100px; /* Adiciona margem inferior */
+}
+
+/* Estiliza o cabeçalho dos depoimentos */
+.head-depo {
+  display: flex;
+  align-items: flex-start; /* Alinha os itens ao início */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Estiliza a lista de depoimentos */
+.depo ul {
+  display: flex; /* Exibe os itens da lista em linha */
+}
+
+/* Estiliza os itens da lista de depoimentos */
+.depo ul li {
+  background: var(--base); /* Define a cor de fundo */
+  width: 440px; /* Define a largura dos itens */
+  margin-right: 100px; /* Adiciona margem à direita */
+  padding: 40px 60px; /* Adiciona espaçamento interno */
+  box-shadow: 0px 8px 20px rgba(255, 0, 0, 0.6); /* Adiciona sombra aos itens */
+  border-radius: 30px; /* Arredonda os cantos dos itens */
+}
+
+/* Estiliza o contêiner do slide de depoimentos */
+.slide-wrapper {
+  overflow: hidden;
+  padding: 145px 0px 45px 0px; /* Adiciona espaçamento interno */
+}
+
+/* Estiliza a lista de slides */
+.slide {
+  display: flex; /* Exibe os slides em linha */
+}
+
+/* Adiciona transições e transformações ao passar o mouse sobre os slides */
+.slide:hover {
+  will-change: transform;
+}
+
+/* Estiliza os itens da lista de slides */
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px; /* Adiciona margem lateral */
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Adiciona sombra aos itens */
+  opacity: 0.8;
+  transform: scale(0.8); /* Reduz a escala dos itens */
+  transition: 0.4s; /* Adiciona transição suave */
+}
+
+/* Estiliza as imagens dentro dos slides */
+.slide img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Define o estilo do slide ativo */
+.slide li.active {
+  opacity: 1;
+  transform: scale(1); /* Aumenta a escala do slide ativo */
+}
+
+/* Estiliza os elementos do cabeçalho dos depoimentos */
+.head-depo div {
+  margin-left: 10px; /* Adiciona margem à esquerda */
+}
+
+/* Estiliza o título no cabeçalho dos depoimentos */
+.head-depo div h4 {
+  font-size: 1.125em; /* Define o tamanho da fonte */
+  font-weight: 700; /* Define a fonte como negrito */
+  color: var(--primary); /* Define a cor do texto usando a variável 'primary' */
+}
+
+/* Estiliza o parágrafo no cabeçalho dos depoimentos */
+.head-depo div p {
+  font-size: 0.75em; /* Define o tamanho da fonte */
+  font-weight: 700; /* Define a fonte como negrito */
+  color: var(--primaryLight); /* Define a cor do texto usando a variável 'primaryLight' */
+  margin: 5px 0px 1px 0px; /* Adiciona margens ao parágrafo */
+}
+
+/* Estiliza o span no cabeçalho dos depoimentos */
+.head-depo div span {
+  color: var(--primaryLight); /* Define a cor do texto usando a variável 'primaryLight' */
+  font-size: 0.75em; /* Define o tamanho da fonte */
+  font-weight: 400; /* Define a fonte com peso normal */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 500px) {
+  .depo ul li {
+    width: 100%; /* Define a largura como 100% em telas menores */
+  }
+  .depo ul {
+    margin: 0px 20px; /* Adiciona margens laterais */
+  }
+}
+
+@media (max-width: 390px) {
+  .depo ul li {
+    width: 100%; /* Define a largura como 100% em telas menores */
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+  .depo ul {
+    margin: 0px 20px; /* Adiciona margens laterais */
+  }
+}

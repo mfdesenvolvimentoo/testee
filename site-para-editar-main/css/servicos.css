@@ -1,0 +1,36 @@
+/* Estiliza os links importantes */
+.important-links {
+  margin-top: 50px; /* Adiciona margem superior */
+}
+
+/* Estiliza a lista de links importantes */
+.important-links-ul {
+  display: flex; /* Exibe os itens em linha */
+  justify-content: center; /* Centraliza os itens */
+  flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+}
+
+/* Estiliza os itens da lista de links importantes */
+.important-links-ul li {
+  margin: 20px; /* Adiciona margem ao redor dos itens */
+}
+
+/* Estiliza os links dentro dos itens da lista */
+.important-links-ul li a {
+  padding: 40px; /* Adiciona espaçamento interno */
+  background: var(--corcabeçalho); /* Define a cor de fundo */
+  display: block; /* Exibe os links como bloco */
+  text-decoration: none; /* Remove sublinhado */
+  font-size: 16px; /* Define o tamanho da fonte */
+  font-weight: 700; /* Define o texto como negrito */
+  text-transform: uppercase; /* Transforma o texto em maiúsculas */
+  color: var(--base); /* Define a cor do texto */
+  text-align: center; /* Centraliza o texto */
+  border-radius: 20px; /* Arredonda os cantos */
+}
+
+/* Adiciona efeito de hover aos links */
+.important-links-ul li a:hover {
+  background: var(--corsuave); /* Altera a cor de fundo ao passar o mouse */
+  transition: 0.3s; /* Adiciona transição suave */
+}

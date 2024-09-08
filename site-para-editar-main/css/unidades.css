@@ -1,0 +1,100 @@
+/* Estiliza a seção de unidades */
+.locals {
+  margin: 163px 0px; /* Define as margens superior e inferior */
+  padding-top: 145px; /* Adiciona espaçamento interno superior */
+}
+
+/* Estiliza o título dentro da seção de unidades */
+.locals .title {
+  max-width: 100%; /* Define a largura máxima como 100% */
+}
+
+/* Altera a direção dos itens dentro do contêiner de unidades */
+.locals .container {
+  flex-direction: column;
+}
+
+/* Estiliza o contêiner principal das unidades */
+.unidade-container {
+  display: flex; /* Exibe os itens em linha */
+}
+
+/* Estiliza as imagens dentro do contêiner de unidades */
+.unidade-container-img {
+  margin-right: 60px; /* Adiciona margem à direita */
+  width: 50%; /* Define a largura como 50% */
+}
+
+/* Estiliza os dados dentro do contêiner de unidades */
+.unidade-container-dados {
+  margin-right: 60px; /* Adiciona margem à direita */
+  width: 20%; /* Define a largura como 20% */
+}
+
+/* Estiliza o mapa dentro do contêiner de unidades */
+.unidade-container-mapa {
+  width: 30%; /* Define a largura como 30% */
+}
+
+/* Estiliza a rua dentro dos dados de unidades */
+.unidade-container-dados .rua {
+  font-size: 2em; /* Define o tamanho da fonte */
+  line-height: 1em; /* Define a altura da linha */
+  margin-bottom: 10px; /* Adiciona margem inferior */
+}
+
+/* Adiciona margem superior ao gap de contato */
+.contact-gap-less {
+  margin-top: 20px;
+}
+
+/* Estiliza o mapa */
+.mapa {
+  width: 100%; /* Define a largura como 100% */
+  height: 100%; /* Define a altura como 100% */
+  box-shadow: 0px 8px 20px rgba(33, 35, 62, 0.6); /* Adiciona sombra */
+}
+
+/* Adiciona margem superior entre unidades subsequentes */
+.local + .local {
+  margin-top: 145px;
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 900px) {
+  .local .title {
+    text-align: center; /* Centraliza o título */
+  }
+  .unidade-container {
+    flex-direction: column; /* Altera a direção dos itens para coluna */
+  }
+
+  .unidade-container-img {
+    width: 100%; /* Define a largura como 100% */
+    margin-right: 0px; /* Remove a margem à direita */
+  }
+
+  .unidade-container-img img {
+    margin: 0 auto; /* Centraliza a imagem */
+  }
+
+  .unidade-container-dados {
+    width: 100%; /* Define a largura como 100% */
+    text-align: center; /* Centraliza o texto */
+    margin-right: 0px; /* Remove a margem à direita */
+    margin-top: 40px; /* Adiciona margem superior */
+  }
+
+  .unidade-container-mapa {
+    margin-top: 40px; /* Adiciona margem superior */
+    width: 100%; /* Define a largura como 100% */
+    height: 200px; /* Define a altura */
+  }
+}
+
+/* Estilos responsivos para telas muito pequenas */
+@media (max-width: 285px) {
+  .unidade-container-dados .rua {
+    word-wrap: break-word; /* Permite quebra de linha nas palavras longas */
+  }
+}

@@ -1,0 +1,136 @@
+/* Reinicializa estilos globais para garantir consistência entre navegadores */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0; /* Remove margem */
+  padding: 0; /* Remove padding */
+  border: 0; /* Remove borda */
+  font-size: 100%; /* Define o tamanho da fonte como 100% */
+  font: inherit; /* Herda a fonte do elemento pai */
+  vertical-align: baseline; /* Define o alinhamento vertical */
+}
+
+/* Define a exibição como bloco para elementos HTML5 */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* Define o estilo de linha para o corpo */
+body {
+  line-height: 1;
+}
+
+/* Remove os estilos de lista */
+ol,
+ul {
+  list-style: none;
+}
+
+/* Remove as aspas de citações */
+blockquote,
+q {
+  quotes: none;
+}
+
+/* Remove conteúdo antes e depois de citações */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* Define a colapsação de bordas para tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
